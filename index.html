@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMA — Joyería Artesanal</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  
+  <!-- Archivo CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Archivo JS Externo (con defer para optimizar la carga) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#productos" onclick="closeMobile()">Productos</a>
+    <a href="#proceso" onclick="closeMobile()">Proceso</a>
+    <a href="#personalizacion" onclick="closeMobile()">Personalizá</a>
+    <a href="#contacto" onclick="closeMobile()">Contacto</a>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Forma</a>
+    <ul class="nav-links">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#personalizacion">Personalizá</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="nav-cta">Pedir pieza</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="eyebrow">Joyería artesanal · Vaciado en cera</p>
+      <h1>Tu historia,<br><em>fundida</em><br>en metal.</h1>
+      <p class="hero-sub">Cada pieza comienza como un sueño en cera. La fundimos, la pulimos y la convertimos en algo que dura para siempre.</p>
+      <div class="ctas">
+        <a href="#personalizacion" class="btn-dark">Personalizá la tuya</a>
+        <a href="#proceso" class="btn-link">Ver cómo lo hacemos →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-svg-wrap">
+        <svg viewBox="0 0 320 320" width="260" height="260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustración de pulsera con letra inicial">
+          <ellipse cx="160" cy="175" rx="95" ry="28" stroke="#C8C5C2" stroke-width="1" opacity=".45"/>
+          <ellipse cx="160" cy="160" rx="95" ry="95" stroke="#D4D1CE" stroke-width="20" fill="none" opacity=".28"/>
+          <ellipse cx="160" cy="160" rx="95" ry="95" stroke="#E0DDDA" stroke-width="1.5" fill="none"/>
+          <ellipse cx="160" cy="160" rx="76" ry="76" stroke="#D0CDCA" stroke-width="1" fill="none" opacity=".35"/>
+          <rect x="136" y="126" width="48" height="68" rx="2" fill="#ECEAE8" stroke="#C8C5C2" stroke-width="1"/>
+          <rect x="138" y="128" width="44" height="64" rx="1" fill="#F4F2F0" stroke="none"/>
+          <text x="160" y="174" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="38" font-weight="400" fill="#9A9896">A</text>
+          <ellipse cx="112" cy="108" rx="7" ry="20" fill="white" opacity=".35" transform="rotate(-32 112 108)"/>
+          <ellipse cx="210" cy="214" rx="4" ry="12" fill="white" opacity=".2" transform="rotate(-32 210 214)"/>
+        </svg>
+      </div>
+      <div class="hero-badges">
+        <div class="badge"><span class="num">100%</span><span class="lbl">Artesanal</span></div>
+        <div class="badge"><span class="num">∞</span><span class="lbl">Formas posibles</span></div>
+        <div class="badge"><span class="num">3</span><span class="lbl">Materiales</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos">
+    <div class="prod-head">
+      <div>
+        <p class="sec-eye">Colección</p>
+        <h2 class="sec-title">Nuestras piezas</h2>
+      </div>
+      <a href="#contacto" class="btn-link">Consultar disponibilidad →</a>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card reveal">
+        <div class="prod-img">
+          <svg viewBox="0 0 120 160" width="72" fill="none">
+            <rect x="18" y="18" width="84" height="124" rx="2" stroke="#B8B5B2" stroke-width="1.5"/>
+            <text x="60" y="110" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="80" fill="#C8C5C2" font-weight="300">A</text>
+          </svg>
+        </div>
+        <p class="prod-name">Letras & Iniciales</p>
+        <p class="prod-desc">Tu inicial o la de alguien especial, fundida en plata, oro o cobre. Para pulseras o colgantes.</p>
+      </div>
+      <div class="prod-card reveal">
+        <div class="prod-img">
+          <svg viewBox="0 0 160 160" width="80" fill="none">
+            <ellipse cx="80" cy="80" rx="62" ry="62" stroke="#C8C5C2" stroke-width="16" fill="none"/>
+            <ellipse cx="80" cy="80" rx="46" ry="46" stroke="#D4D1CE" stroke-width="1" fill="none" opacity=".5"/>
+            <ellipse cx="52" cy="38" rx="6" ry="18" fill="#E0DDDA" opacity=".5" transform="rotate(-30 52 38)"/>
+          </svg>
+        </div>
+        <p class="prod-name">Pulseras</p>
+        <p class="prod-desc">Pulseras en metal sólido. Podés incorporar letras, formas o texturas al propio metal.</p>
+      </div>
+      <div class="prod-card reveal">
+        <div class="prod-img">
+          <svg viewBox="0 0 120 160" width="70" fill="none">
+            <line x1="60" y1="8" x2="60" y2="42" stroke="#B8B5B2" stroke-width="1.5"/>
+            <circle cx="60" cy="14" r="6" fill="none" stroke="#C8C5C2" stroke-width="1.5"/>
+            <path d="M28 95 C28 68 44 55 60 55 C76 55 92 68 92 95 C92 118 76 130 60 130 C44 130 28 118 28 95Z" stroke="#C8C5C2" stroke-width="1.5" fill="#F0EDEA"/>
+            <text x="60" y="103" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="34" fill="#B8B5B2" font-weight="300">♡</text>
+          </svg>
+        </div>
+        <p class="prod-name">Colgantes</p>
+        <p class="prod-desc">Colgantes con formas únicas: letras, símbolos, figuras o diseños completamente a medida.</p>
+      </div>
+      <div class="prod-card reveal">
+        <div class="prod-img">
+          <svg viewBox="0 0 160 160" width="82" fill="none">
+            <path d="M80 22 L97 62 L142 62 L107 87 L122 130 L80 104 L38 130 L53 87 L18 62 L63 62 Z" stroke="#C8C5C2" stroke-width="1.5" fill="#F0EDEA"/>
+            <path d="M80 38 L93 68 L126 68 L100 85 L110 116 L80 97 L50 116 L60 85 L34 68 L67 68 Z" stroke="#D4D1CE" stroke-width=".5" fill="none" opacity=".4"/>
+          </svg>
+        </div>
+        <p class="prod-name">Formas Especiales</p>
+        <p class="prod-desc">¿Tenés una forma en mente? La modelamos en cera y la fundimos. Sin límites de diseño.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso">
+    <p class="sec-eye">Detrás de cada pieza</p>
+    <h2 class="sec-title">El proceso de<br>vaciado en cera</h2>
+    <p class="sec-sub">Una técnica artesanal que data de siglos, aplicada a cada pieza con precisión y dedicación.</p>
+    <div class="proc-layout">
+      <div class="steps">
+        <div class="step reveal">
+          <p class="step-num">01 — Diseño</p>
+          <h3 class="step-title">Modelado en cera</h3>
+          <p class="step-text">Todo comienza a mano. Modelamos tu diseño en cera con precisión milimétrica, dando forma exacta a lo que imaginás: una letra, una figura, un símbolo.</p>
+        </div>
+        <div class="step reveal">
+          <p class="step-num">02 — Inversión</p>
+          <h3 class="step-title">Revestimiento y calcinación</h3>
+          <p class="step-text">La pieza en cera se reviste con material refractario. Al elevar la temperatura, la cera desaparece y deja un molde perfecto listo para recibir el metal fundido.</p>
+        </div>
+        <div class="step reveal">
+          <p class="step-num">03 — Fundición</p>
+          <h3 class="step-title">Vaciado en metal</h3>
+          <p class="step-text">Fundimos el metal elegido (plata, oro o cobre) y lo volcamos en el molde. El metal fluye y ocupa exactamente el espacio que dejó la cera, capturando cada detalle.</p>
+        </div>
+        <div class="step reveal">
+          <p class="step-num">04 — Terminación</p>
+          <h3 class="step-title">Tu pieza única</h3>
+          <p class="step-text">Pulimos, limamos y damos el acabado final a mano. El resultado es una pieza sólida, duradera y completamente única que nunca volverá a existir igual.</p>
+        </div>
+      </div>
+      <div class="proc-visual">
+        <svg viewBox="0 0 380 380" width="300" height="300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="190" cy="190" r="140" stroke="#E0DDDA" stroke-width="1" stroke-dasharray="5 5" opacity=".6"/>
+          <ellipse cx="190" cy="186" rx="58" ry="63" fill="#E8E5E2" stroke="#C8C5C2" stroke-width="1.5"/>
+          <ellipse cx="190" cy="178" rx="44" ry="46" fill="#F0EDEA" stroke="#D4D1CE" stroke-width="1"/>
+          <text x="190" y="210" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="68" font-weight="300" fill="#B8B5B2">A</text>
+          <ellipse cx="190" cy="258" rx="10" ry="5" fill="#E0DDDA" opacity=".7"/>
+          <path d="M185 249 Q190 265 195 249" fill="#D4D1CE" opacity=".5"/>
+          <path d="M140 310 Q155 296 170 310 Q185 324 200 310 Q215 296 230 310 Q245 324 250 318" stroke="#D4D1CE" stroke-width="1.5" fill="none" opacity=".55"/>
+          <path d="M145 326 Q160 312 175 326 Q190 340 205 326 Q220 312 235 326" stroke="#D4D1CE" stroke-width="1" fill="none" opacity=".35"/>
+          <ellipse cx="165" cy="152" rx="6" ry="16" fill="white" opacity=".4" transform="rotate(-20 165 152)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIZACIÓN -->
+  <section id="personalizacion">
+    <p class="sec-eye">Hecho para vos</p>
+    <h2 class="sec-title" style="color:var(--white)">Diseñá tu pieza</h2>
+    <p class="sec-sub">Elegí la letra, el material y el tipo de joya. Nosotros hacemos el resto.</p>
+    <div class="custom-layout">
+      <div>
+        <p class="letter-section-label">Tu letra</p>
+        <div class="letters-row" id="letterRow"></div>
+
+        <p class="letter-section-label" style="margin-top:1.5rem">Material</p>
+        <div class="mat-opts">
+          <button class="mat-opt active-mat" data-mat="plata" onclick="selectMat(this)">
+            <div class="mat-dot silver-d"></div>Plata
+          </button>
+          <button class="mat-opt" data-mat="oro" onclick="selectMat(this)">
+            <div class="mat-dot gold-d"></div>Oro
+          </button>
+          <button class="mat-opt" data-mat="cobre" onclick="selectMat(this)">
+            <div class="mat-dot copper-d"></div>Cobre
+          </button>
+        </div>
+
+        <p class="letter-section-label" style="margin-top:1.5rem">Tipo de joya</p>
+        <div class="tipo-row">
+          <button class="tipo-chip active-tipo" onclick="selectTipo(this)">Pulsera</button>
+          <button class="tipo-chip" onclick="selectTipo(this)">Colgante</button>
+          <button class="tipo-chip" onclick="selectTipo(this)">Llavero</button>
+          <button class="tipo-chip" onclick="selectTipo(this)">Anillo</button>
+          <button class="tipo-chip" onclick="selectTipo(this)">Arito</button>
+        </div>
+
+        <a href="#contacto" class="btn-outline" id="pedirBtn">Pedir mi pieza →</a>
+      </div>
+
+      <div class="preview-box">
+        <div class="preview-letter" id="previewLetter">A</div>
+        <svg viewBox="0 0 280 280" width="200" height="200" fill="none" style="position:relative;z-index:1;opacity:.3;">
+          <ellipse cx="140" cy="140" rx="95" ry="95" stroke="rgba(255,255,255,.35)" stroke-width="16" fill="none"/>
+          <ellipse cx="140" cy="140" rx="79" ry="79" stroke="rgba(255,255,255,.1)" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios">
+    <p class="sec-eye">Clientes</p>
+    <h2 class="sec-title">Lo que dicen</h2>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <p class="test-quote">"Pedí un colgante con la inicial de mi mamá para su cumpleaños. Quedó increíble, mucho más lindo de lo que esperaba. Se lo regalé y lloró."</p>
+        <p class="test-author">— Valentina M.</p>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-quote">"La pulsera que me hicieron es una joya única. El nivel de detalle en el modelado es impresionante. Ya les encargué otra para mi pareja."</p>
+        <p class="test-author">— Lucas G.</p>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-quote">"Quería algo completamente personalizado y me ayudaron a diseñarlo desde cero. El proceso fue claro y el resultado final superó todas mis expectativas."</p>
+        <p class="test-author">— Camila R.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <p class="sec-eye">Contacto</p>
+    <h2 class="contact-title">¿Lista para tu pieza única?</h2>
+    <p class="contact-sub">Escribinos y coordinamos tu pedido personalizado. Tiempo de producción estimado: 7 a 14 días hábiles.</p>
+    <div class="contact-btns">
+      <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20sobre%20una%20pieza%20personalizada" class="btn-wa" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escribinos por WhatsApp
+      </a>
+      <a href="https://instagram.com" class="btn-link" target="_blank" rel="noopener">Ver Instagram →</a>
+    </div>
+    <div class="info-strip">
+      <div class="info-item">
+        <p class="info-label">Producción</p>
+        <p class="info-val">7–14 días hábiles</p>
+      </div>
+      <div class="info-item">
+        <p class="info-label">Materiales</p>
+        <p class="info-val">Plata · Oro · Cobre</p>
+      </div>
+      <div class="info-item">
+        <p class="info-label">Envíos</p>
+        <p class="info-val">Todo el país</p>
+      </div>
+      <div class="info-item">
+        <p class="info-label">Pagos</p>
+        <p class="info-val">Transferencia · Mercado Pago</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="foot-logo">Forma</span>
+    <span class="foot-copy">© 2026 Forma · Joyería artesanal · La Plata, Argentina</span>
+    <ul class="foot-links">
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
